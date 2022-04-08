@@ -1,3 +1,0 @@
-/mnt/c/Users/Alex Shockley/Desktop/CSProjects/Reading_In_Directories_Example/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/Alex Shockley/Desktop/CSProjects/Reading_In_Directories_Example/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Alex Shockley/Desktop/CSProjects/Reading_In_Directories_Example/cmake-build-debug/CMakeFiles/untitled6.dir
