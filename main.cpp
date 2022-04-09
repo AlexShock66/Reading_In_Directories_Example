@@ -6,7 +6,6 @@ using namespace std;
 
 void printFileNames(string directory) {
     string filepath;
-    ifstream fin;
     DIR *dp;
     struct dirent *dirp; // the directory file
     struct stat filestat;
@@ -24,8 +23,6 @@ void printFileNames(string directory) {
             i++;
             continue;
         }
-        if (dirp == nullptr )
-            break;
 
         filepath = directory + "/" + dirp->d_name;
 
@@ -38,7 +35,6 @@ void printFileNames(string directory) {
         }
 
 
-        fin.close(); // be sure to close files
 
     }
     closedir(dp); // closing the directory
@@ -48,4 +44,14 @@ int main() {
     string directory = "input";
     printFileNames(directory);
     return 0;
+    /*  EXPECTED OUTPUT:
+     input/input_2/inside_input_2_01.txt
+     input/input_2/inside_input_2_02.txt
+     input/input_3/inside_input_3_01.txt
+     input/input_3/inside_input_3_02.txt
+     input/inside_input_01.txt
+
+     Process finished with exit code 0
+
+     */
 }
